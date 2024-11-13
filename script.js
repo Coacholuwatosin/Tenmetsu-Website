@@ -1,4 +1,4 @@
-<script src="https://kit.fontawesome.com/1d08d3a6b1.js" crossorigin="anonymous"></script>
+{/* <script src="https://kit.fontawesome.com/1d08d3a6b1.js" crossorigin="anonymous"></script>
 
 
 
@@ -45,4 +45,4 @@
     function toggleSidebar() {
         const sidebar = document.getElementById('sidebar');
         sidebar.classList.toggle('open');
-    }
+    } */}
