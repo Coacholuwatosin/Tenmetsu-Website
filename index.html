@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Header with Sidebar</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+    <style>
+        
+</style>
+</head>
+<body>
+
+<header>
+    <div class="logo"><img src="Images/Logo.png" alt="Logo"></div>
+    <nav>
+        <a href="#">exploration</a>
+        <a href="#">collections</a>
+        <a href="#">rewards</a>
+        <a href="#">community</a>
+    </nav>
+    <button class="button">Coming Soon</button>
+    <div class="menuToggle" onclick="toggleSidebar()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</header>
+
+<div class="sidebar" id="sidebar">
+    <a href="#">exploration</a>
+    <a href="#">collections</a>
+    <a href="#">rewards</a>
+    <a href="#">community</a>
+</div>
+
+<section class="heroSection">
+    <div class="welcomeBanner">
+        <img src="Images/Vector3.png" alt="Icon" class="icon">
+        <span class="welcomeText">Welcome To TENMETSU</span>
+    </div>
+    <div class="introText">
+        Your Gateway To NFTs, <br> GameFi, SocialFi, <br> And MusicFi
+    </div>
+    <p class="description">
+        A Revolutionary Decentralized Platform That Lets You Stake, Play, Earn, Collect, And Connect
+    </p>
+    <button class="exploreButton">Explore The Platform</button>
+</section>
+
+
+
+<!-- Section 2  -->
+
+
+<section class="tabsSection">
+    <div class="container">
+        <div class="tabs">
+            <div id="tabNFT" class="tab active" onclick="selectTab('NFT')">
+                <img src="Images/skullwhite.png" alt="NFT Icon" class="tabIcon">
+                <span class="tabText">NFT Marketplace</span>
+            </div>
+            <div id="tabSocialFi" class="tab" onclick="selectTab('SocialFi')">
+                <span class="tabText">SocialFi Quests</span>
+            </div>
+            <div id="tabGameFi" class="tab" onclick="selectTab('GameFi')">
+                <img src="Images/gamewhite.png" alt="GameFi Icon" class="tabIcon">
+                <span class="tabText">GameFi</span>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="sectionTitle">NFT Marketplace: Buy, sell, and trade unique digital assets</div>
+            <div class="sectionDescription">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</div>
+            <button class="learnMoreBtn">Learn More</button>
+        </div>
+
+        <div class="imageGrid">
+            <div class="imageCard">
+                <img src="Images/Img 1.png" alt="Image 1" class="image">
+                <div class="imageOverlay">
+                    <div class="avatarInfo">
+                        <img src="Images/avatar.png" alt="Avatar" class="avatar">
+                        <span class="avatarName">John Doe</span>
+                        <img src="Images/blue tick.png" alt="Blue Tick" class="blueTick">
+                    </div>
+                    <div class="imageInfo">
+                        <img src="Images/skullwhite.png" alt="Skull Icon" class="skullIcon">
+                        <span class="itemNumber">12345</span>
+                        <span class="arrow">→</span>
+                    </div>
+                </div>
+            </div>
+            <div class="imageCard">
+                <img src="Images/Img2.png" alt="Image 2" class="image">
+                <div class="imageOverlay">
+                    <div class="avatarInfo">
+                        <img src="Images/avatar.png" alt="Avatar" class="avatar">
+                        <span class="avatarName">Jane Doe</span>
+                        <img src="Images/blue tick.png" alt="Blue Tick" class="blueTick">
+                    </div>
+                    <div class="imageInfo">
+                        <img src="Images/skullwhite.png" alt="Skull Icon" class="skullIcon">
+                        <span class="itemNumber">67890</span>
+                        <span class="arrow">→</span>
+                    </div>
+                </div>
+            </div>
+            <div class="imageCard">
+                <img src="Images/Img3.png" alt="Image 3" class="image">
+                <div class="imageOverlay">
+                    <div class="avatarInfo">
+                        <img src="Images/avatar.png" alt="Avatar" class="avatar">
+                        <span class="avatarName">Alex Smith</span>
+                        <img src="Images/blue tick.png" alt="Blue Tick" class="blueTick">
+                    </div>
+                    <div class="imageInfo">
+                        <img src="Images/skullwhite.png" alt="Skull Icon" class="skullIcon">
+                        <span class="itemNumber">54321</span>
+                        <span class="arrow">→</span>
+                    </div>
+                </div>
+            </div>
+            <div class="imageCard">
+                <img src="Images/Img4.png" alt="Image 4" class="image">
+                <div class="imageOverlay">
+                    <div class="avatarInfo">
+                        <img src="Images/avatar.png" alt="Avatar" class="avatar">
+                        <span class="avatarName">Chris Lee</span>
+                        <img src="Images/blue tick.png" alt="Blue Tick" class="blueTick">
+                    </div>
+                    <div class="imageInfo">
+                        <img src="Images/skullwhite.png" alt="Skull Icon" class="skullIcon">
+                        <span class="itemNumber">11223</span>
+                        <span class="arrow">→</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Container Section -->
+
+<section class="features-section">
+
+    <div class="features-heading">
+        <h2 class="features-title">
+            Key Features and Revenue Streams
+        </h2>
+    </div>
+
+    <div class="features-grid">
+        <div class="feature-box">
+            <h3 class="feature-title">NFT Marketplace</h3>
+            <p class="feature-description">Discover and trade exclusive digital assets.</p>
+            <img class="feature-icon" src="Images/skullcontainer.png" alt="NFT Marketplace Icon">
+        </div>
+
+        <div class="feature-box">
+            <h3 class="feature-title">Staking and Yield Farming</h3>
+            <p class="feature-description">Earn rewards by staking $TEN tokens.</p>
+            <img class="feature-icon" src="Images/stakingicon.png" alt="Staking Icon">
+        </div>
+
+        <div class="feature-box">
+            <h3 class="feature-title">SocialFi Quests</h3>
+            <p class="feature-description">Engage with projects, earn rewards, and connect.</p>
+            <img class="feature-icon" src="Images/socialquesticon.png" alt="SocialFi Icon">
+        </div>
+
+        <div class="feature-box">
+            <h3 class="feature-title">MusicFi</h3>
+            <p class="feature-description">Support artists by buying music rights and earn royalties from streams.</p>
+            <img class="feature-icon" src="Images/musicicon.png" alt="Token Swap Icon">
+        </div>
+
+
+        <div class="feature-box">
+            <h3 class="feature-title">GameFi</h3>
+            <p class="feature-description">Complete quests, join battles, and earn valuable rewards.</p>
+            <img class="feature-icon" src="Images/gameicon.png" alt="Launchpad Icon">
+        </div>
+
+        <div class="feature-box">
+            <h3 class="feature-title">Merchandise and Collaborations</h3>
+            <p class="feature-description">Access exclusive TENMETSU and partner merchandise.</p>
+            <img class="feature-icon" src="Images/merchandiseicon.png" alt="DAO Governance Icon">
+        </div>
+    </div>
+
+</section>
+
+
+
+
+
+<!-- section Another -->
+
+<div class="section">
+    <div class="card">
+        <div class="cardContent">
+            <img src="Images/musicsvg.svg" alt="icon 1" class="cardIcon">
+            <p class="cardDescription">Collect limited-edition music rights</p>
+            <button class="cardButton">Get Started</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="cardContent">
+            <img src="Images/whiteskull.png" alt="icon 2" class="cardIcon">
+            <p class="cardDescription">Explore the world of music NFTs</p>
+            <button class="cardButton">Get Started</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="cardContent">
+            <img src="Images/whitegame.png" alt="icon 3" class="cardIcon">
+            <p class="cardDescription">Own a piece of the music industry</p>
+            <button class="cardButton">Get Started</button>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- How It Work Section -->
+
+
+<div class="howItWorksSection">
+    <div class="howItWorksTitle">
+        <h2>How It Works</h2>
+    </div>
+
+    <div class="howItWorksContainers">
+        <div class="howItWorksContainer left">
+            <div class="containerContent">
+                <div class="iconAndText">
+                    <img src="Images/walleticon.png" alt="Icon 1" class="containerIcon">
+                    <div class="textContent">
+                        <h3 class="containerTitle">Connect your Wallet</h3>
+                        <p class="containerSubtitle">Quick and secure wallet connection.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="howItWorksContainer center">
+            <div class="containerContent">
+                <div class="iconAndText">
+                    <img src="images/discover.png" alt="Icon 2" class="containerIcon">
+                    <div class="textContent">
+                        <h3 class="containerTitle">Discover</h3>
+                        <p class="containerSubtitle">NFTs, music rights, games, and quests.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="howItWorksContainer right">
+            <div class="containerContent">
+                <div class="iconAndText">
+                    <img src="images/engage.png" alt="Icon 3" class="containerIcon">
+                    <div class="textContent">
+                        <h3 class="containerTitle">Earn and Engage</h3>
+                        <p class="containerSubtitle">Stake, play, and support creators to earn rewards</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="startYourJourney">
+        <a href="#" class="startButton">Start Your Journey <span>&#8593;</span></a>
+    </div>
+</div>
+
+
+
+
+<!-- Collaboration Section -->
+
+<div class="collaborationSection">
+    <h2 class="sectionTitle">Collaborations and Partnerships</h2>
+
+    <div class="logosContainer">
+        <div class="logoItem">
+            <img src="images/Collab1.svg" alt="Logo 1" class="logoImage">
+        </div>
+        <div class="logoItem">
+            <img src="images/collab2.png" alt="Logo 2" class="logoImage">
+        </div>
+        <div class="logoItem">
+            <img src="images/collab3.svg" alt="Logo 3" class="logoImage">
+        </div>
+        <div class="logoItem">
+            <img src="images/collab4.svg" alt="Logo 4" class="logoImage">
+        </div>
+        <div class="logoItem">
+            <img src="images/collab5.svg" alt="Logo 5" class="logoImage">
+        </div>
+    </div>
+
+    <a href="#" class="exploreButton">
+        Explore Collaborations <span class="arrow">→</span>
+    </a>
+</div>
+
+
+
+<!-- FAQ Section -->
+
+
+<div class="faqSection">
+    <h2 class="faqTitle">Frequently Asked Questions</h2>
+
+    <div class="faqContainer">
+        <div class="faqItem active">
+            <div class="faqHeader" onclick="toggleFAQ(this)">
+                <h3 class="faqQuestion">What is the purpose of this website?</h3>
+                <span class="faqArrow">&#9660;</span>
+            </div>
+            <div class="faqAnswer">
+                <p>This website serves as a platform to showcase our collaborations and partnerships.</p>
+            </div>
+        </div>
+
+        <div class="faqItem">
+            <div class="faqHeader" onclick="toggleFAQ(this)">
+                <h3 class="faqQuestion">How can I collaborate with you?</h3>
+                <span class="faqArrow">&#9660;</span>
+            </div>
+            <div class="faqAnswer">
+                <p>You can reach out to us via the contact form or email us directly to discuss collaboration opportunities.</p>
+            </div>
+        </div>
+
+        <div class="faqItem">
+            <div class="faqHeader" onclick="toggleFAQ(this)">
+                <h3 class="faqQuestion">Do you offer custom solutions?</h3>
+                <span class="faqArrow">&#9660;</span>
+            </div>
+            <div class="faqAnswer">
+                <p>Yes, we provide custom solutions based on your needs. Get in touch with us for more details.</p>
+            </div>
+        </div>
+
+        <div class="faqItem">
+            <div class="faqHeader" onclick="toggleFAQ(this)">
+                <h3 class="faqQuestion">What is your return policy?</h3>
+                <span class="faqArrow">&#9660;</span>
+            </div>
+            <div class="faqAnswer">
+                <p>Our return policy allows for returns within 30 days of purchase. Please read our full policy for more details.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- FAQ Section -->
+
+<div class="footerSection">
+    <div class="footerTop">
+        <div class="footerLogo">
+            <img src="images/Logo.png" alt="Logo" class="footerLogoImage">
+        </div>
+        <div class="footerNav">
+            <ul>
+                <li><a href="#">Terms Of Service</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="footerSignup">
+            <a href="#" class="signupBtn">Sign Up</a>
+        </div>
+    </div>
+
+    <div class="footerBottom">
+        <div class="footerCopyRight">
+            <p>&copy; 2024 Tenmetsu. All Rights Reserved.</p>
+        </div>
+        <div class="footerSocial">
+            <a href="#" class="socialIcon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="socialIcon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="socialIcon"><i class="fab fa-discord"></i></a>
+            <a href="#" class="socialIcon"><i class="fab fa-facebook-f"></i></a>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+</body>
+</html>
