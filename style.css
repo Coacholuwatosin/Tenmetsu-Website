@@ -11,6 +11,9 @@ body {
     color: #fff;
 }
 
+
+/* Header Section */
+
 header {
     position: fixed;
     top: 0;
@@ -130,6 +133,10 @@ nav a:hover {
 .sidebar a:hover {
     background-color: #333;
 }
+
+
+
+/* Banner Hero Section */
 
 .heroSection {
     display: flex;
@@ -262,7 +269,7 @@ nav a:hover {
     }
 
     .introText {
-        font-size: 28px;
+        font-size: 35px;
     }
 
     .description {
@@ -340,6 +347,9 @@ nav a:hover {
 }
 
 
+
+/* Tabs Section */
+
 .tabsSection {
 padding: 50px 0;
 background-color: #000000;
@@ -366,6 +376,7 @@ transition: all 0.3s ease;
 
 .tab {
 display: flex;
+flex-wrap: nowrap;
 align-items: center;
 padding: 10px 20px;
 cursor: pointer;
@@ -394,14 +405,16 @@ border: 1px solid #d3a50c;
 margin-bottom: 30px;
 }
 
-.sectionTitle {
-font-size: 20px;
+.sectionTitle1 {
+font-size: 25px;
 font-weight: bold;
 color: #ffffff;
 margin-bottom: 20px;
+margin-top: 10px;
+line-height: 1.1;
 }
 
-.sectionDescription {
+.sectionDescription1 {
 font-size: 16px;
 color: #dad6d6;
 margin-bottom: 30px;
@@ -534,7 +547,7 @@ align-items: center;
 }
 
 .tab {
-margin: 5px 0;
+margin: 0px 0;
 }
 
 .imageOverlay {
@@ -556,12 +569,12 @@ grid-template-columns: 1fr;
 padding: 20px;
 }
 
-.sectionTitle {
-font-size: 20px;
+.sectionTitle1 {
+font-size: 18px;
 }
 
-.sectionDescription {
-font-size: 14px;
+.sectionDescription1 {
+font-size: 13px;
 }
 
 .imageOverlay {
@@ -1340,7 +1353,7 @@ transform: rotate(180deg);
     }
 }
 
-/* Small Mobile Responsive */
+
 @media (max-width: 480px) {
     .footerNav a {
         font-size: 14px;
@@ -1355,4 +1368,228 @@ transform: rotate(180deg);
         flex-direction: column;
         text-align: center;
     }
+}
+
+
+/* How It Works Section */
+
+.howItWorksSection {
+background-image: url('/Images/howitworkbg.png');
+background-size: cover;
+padding: 80px 20px;
+text-align: center;
+}
+
+.howItWorksTitle h2 {
+color: white;
+font-size: 42px;
+margin-bottom: 40px;
+text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+animation: fadeInTitle 1s ease-out;
+}
+
+.howItWorksContainers {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 30px;
+max-width: 1200px;
+margin: 0 auto;
+animation: fadeInContainers 1s ease-out;
+}
+
+.howItWorksContainer {
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: transparent;
+border-radius: 12px;
+padding: 20px;
+position: relative;
+box-sizing: border-box;
+opacity: 0;
+transform: translateY(30px);
+animation: bounceInUp 1s ease-out forwards;
+}
+
+.howItWorksContainer.left {
+background-color: #5F4211;
+border: 1px solid #FF9E00;
+justify-content: flex-start;
+}
+
+.howItWorksContainer.center {
+background-color: rgba(151, 58, 45, 0.3);
+border: 1px solid #FD624B;
+justify-content: center;
+}
+
+.howItWorksContainer.right {
+background-color: rgba(6, 251, 240, 0.3);
+border: 1px solid #06FBF0;
+justify-content: flex-end;
+}
+
+.containerContent {
+display: flex;
+align-items: center;
+position: relative;
+gap: 20px;
+}
+
+.iconAndText {
+display: flex;
+align-items: center;
+}
+
+.containerIcon {
+width: 60px;
+height: 60px;
+margin-right: 20px;
+z-index: 1;
+transition: transform 0.3s ease-in-out;
+}
+
+.containerIcon:hover {
+transform: scale(1.1);
+}
+
+.textContent {
+position: relative;
+z-index: 2;
+text-align: left;
+}
+
+.containerTitle {
+font-size: 22px;
+font-weight: 600;
+color: white;
+margin-bottom: 5px;
+transition: color 0.3s ease-in-out;
+}
+
+.containerSubtitle {
+font-size: 16px;
+color: white;
+opacity: 0.8;
+}
+
+.howItWorksContainer.left:hover .containerTitle,
+.howItWorksContainer.center:hover .containerTitle,
+.howItWorksContainer.right:hover .containerTitle {
+color: #FF9E00;
+}
+
+.startYourJourney {
+margin-top: 60px;
+animation: fadeInUp 1s ease-out;
+}
+
+.startButton {
+background: linear-gradient(90deg, #dabb0d, #cc8e00);
+color: white;
+padding: 18px 40px;
+border-radius: 50px;
+font-size: 20px;
+text-decoration: none;
+display: inline-flex;
+align-items: center;
+justify-content: center;
+transition: background 0.3s ease, transform 0.3s ease-in-out;
+}
+
+.startButton:hover {
+background: linear-gradient(90deg, #cc8e00, #dabb0d);
+transform: translateY(-5px);
+}
+
+.startButton span {
+margin-left: 10px;
+font-size: 22px;
+}
+
+@media (max-width: 768px) {
+
+.howItWorksTitle h2 {
+    font-size: 28px;
+}
+
+.howItWorksSection{
+    margin-top: 80px;
+    padding: 30px;
+}
+.howItWorksContainers {
+    grid-template-columns: 1fr;
+    gap: 3px;
+}
+
+.howItWorksContainer {
+    margin-bottom: 20px;
+}
+
+.containerIcon {
+width: 30px;
+height: 30px;
+}
+
+.containerTitle {
+    font-size: 18px;
+}
+
+.containerSubtitle {
+    font-size: 14px;
+}
+
+.startButton {
+    font-size: 16px;
+    padding: 10px 30px;
+    margin-top: -20px;
+}
+}
+
+@keyframes fadeInTitle {
+0% {
+    opacity: 0;
+    transform: translateY(-20px);
+}
+100% {
+    opacity: 1;
+    transform: translateY(0);
+}
+}
+
+@keyframes fadeInContainers {
+0% {
+    opacity: 0;
+    transform: translateY(30px);
+}
+100% {
+    opacity: 1;
+    transform: translateY(0);
+}
+}
+
+@keyframes bounceInUp {
+0% {
+    opacity: 0;
+    transform: translateY(30px);
+}
+60% {
+    opacity: 1;
+    transform: translateY(-10px);
+}
+100% {
+    opacity: 1;
+    transform: translateY(0);
+}
+}
+
+@keyframes fadeInUp {
+0% {
+    opacity: 0;
+    transform: translateY(20px);
+}
+100% {
+    opacity: 1;
+    transform: translateY(0);
+}
 }
