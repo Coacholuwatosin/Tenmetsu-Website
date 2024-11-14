@@ -1,4 +1,6 @@
-{/* <script src="https://kit.fontawesome.com/1d08d3a6b1.js" crossorigin="anonymous"></script>
+src="https://kit.fontawesome.com/1d08d3a6b1.js"; crossorigin="anonymous">
+
+
 
 
 
@@ -28,7 +30,6 @@
     document.querySelector('.faqItem.active .faqArrow').innerHTML = '&#9650;';
 
 
-
     function selectTab(tabName) {
         const tabs = document.querySelectorAll('.tab');
         tabs.forEach(tab => {
@@ -45,4 +46,4 @@
     function toggleSidebar() {
         const sidebar = document.getElementById('sidebar');
         sidebar.classList.toggle('open');
-    } */}
+    }
