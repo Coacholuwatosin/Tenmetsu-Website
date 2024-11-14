@@ -834,6 +834,7 @@ color: white;
         "card2"
         "card3";
     height: 100vh;
+    margin-bottom: 0px;
 }
 
 .card {
@@ -1478,7 +1479,7 @@ font-size: 22px;
 }
 
 .howItWorksSection{
-    margin-top: 180px;
+    margin-top: 150px;
     padding: 30px;
 }
 .howItWorksContainers {
