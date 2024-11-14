@@ -149,7 +149,7 @@ nav a:hover {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background: url('/Images/3D element.png') center center / cover no-repeat;
+    background: url('Images/3D element.png') center center / cover no-repeat;
     padding: 80px 20px 20px;
     text-align: center;
     position: relative;
@@ -763,7 +763,7 @@ top: 0;
 left: 0;
 width: 100%;
 height: 100%;
-background-image: url('/images/nft2.jpg');
+background-image: url('images/nft2.jpg');
 background-size: cover;
 background-position: center center;
 background-repeat: no-repeat;
@@ -1340,7 +1340,7 @@ color: #d4af37;
 }
 
 .howItWorksSection {
-background-image: url('/images/howitworkbg.png');
+background-image: url('images/howitworkbg.png');
 background-size: cover;
 padding: 80px 20px;
 text-align: center;
@@ -1555,7 +1555,7 @@ font-size: 22px;
 <body>
 
 <header>
-    <div class="logo"><img src="/Images/Logo.png" alt="Logo"></div>
+    <div class="logo"><img src="Images/Logo.png" alt="Logo"></div>
     <nav>
         <a href="#">exploration</a>
         <a href="#">collections</a>
@@ -1579,7 +1579,7 @@ font-size: 22px;
 
 <section class="heroSection">
     <div class="welcomeBanner">
-        <img src="/Images/Vector3.png" alt="Icon" class="icon">
+        <img src="Images/Vector3.png" alt="Icon" class="icon">
         <span class="welcomeText">Welcome To TENMETSU</span>
     </div>
     <div class="introText">
@@ -1600,14 +1600,14 @@ font-size: 22px;
     <div class="container">
         <div class="tabs">
             <div id="tabNFT" class="tab active" onclick="selectTab('NFT')">
-                <img src="/Images/skullwhite.png" alt="NFT Icon" class="tabIcon">
+                <img src="Images/skullwhite.png" alt="NFT Icon" class="tabIcon">
                 <span class="tabText">NFT Marketplace</span>
             </div>
             <div id="tabSocialFi" class="tab" onclick="selectTab('SocialFi')">
                 <span class="tabText">SocialFi Quests</span>
             </div>
             <div id="tabGameFi" class="tab" onclick="selectTab('GameFi')">
-                <img src="/Images/gamewhite.png" alt="GameFi Icon" class="tabIcon">
+                <img src="Images/gamewhite.png" alt="GameFi Icon" class="tabIcon">
                 <span class="tabText">GameFi</span>
             </div>
         </div>
@@ -1620,60 +1620,60 @@ font-size: 22px;
 
         <div class="imageGrid">
             <div class="imageCard">
-                <img src="/Images/Img 1.png" alt="Image 1" class="image">
+                <img src="Images/Img 1.png" alt="Image 1" class="image">
                 <div class="imageOverlay">
                     <div class="avatarInfo">
-                        <img src="/Images/avatar.png" alt="Avatar" class="avatar">
+                        <img src="Images/avatar.png" alt="Avatar" class="avatar">
                         <span class="avatarName">John Doe</span>
-                        <img src="/Images/blue tick.png" alt="Blue Tick" class="blueTick">
+                        <img src="Images/blue tick.png" alt="Blue Tick" class="blueTick">
                     </div>
                     <div class="imageInfo">
-                        <img src="/Images/skullwhite.png" alt="Skull Icon" class="skullIcon">
+                        <img src="Images/skullwhite.png" alt="Skull Icon" class="skullIcon">
                         <span class="itemNumber">12345</span>
                         <span class="arrow">→</span>
                     </div>
                 </div>
             </div>
             <div class="imageCard">
-                <img src="/Images/Img2.png" alt="Image 2" class="image">
+                <img src="Images/Img2.png" alt="Image 2" class="image">
                 <div class="imageOverlay">
                     <div class="avatarInfo">
-                        <img src="/Images/avatar.png" alt="Avatar" class="avatar">
+                        <img src="Images/avatar.png" alt="Avatar" class="avatar">
                         <span class="avatarName">Jane Doe</span>
                         <img src="Images/blue tick.png" alt="Blue Tick" class="blueTick">
                     </div>
                     <div class="imageInfo">
-                        <img src="/Images/skullwhite.png" alt="Skull Icon" class="skullIcon">
+                        <img src="Images/skullwhite.png" alt="Skull Icon" class="skullIcon">
                         <span class="itemNumber">67890</span>
                         <span class="arrow">→</span>
                     </div>
                 </div>
             </div>
             <div class="imageCard">
-                <img src="/Images/Img3.png" alt="Image 3" class="image">
+                <img src="Images/Img3.png" alt="Image 3" class="image">
                 <div class="imageOverlay">
                     <div class="avatarInfo">
-                        <img src="/Images/avatar.png" alt="Avatar" class="avatar">
+                        <img src="Images/avatar.png" alt="Avatar" class="avatar">
                         <span class="avatarName">Alex Smith</span>
-                        <img src="/Images/blue tick.png" alt="Blue Tick" class="blueTick">
+                        <img src="Images/blue tick.png" alt="Blue Tick" class="blueTick">
                     </div>
                     <div class="imageInfo">
-                        <img src="/Images/skullwhite.png" alt="Skull Icon" class="skullIcon">
+                        <img src="Images/skullwhite.png" alt="Skull Icon" class="skullIcon">
                         <span class="itemNumber">54321</span>
                         <span class="arrow">→</span>
                     </div>
                 </div>
             </div>
             <div class="imageCard">
-                <img src="/Images/Img4.png" alt="Image 4" class="image">
+                <img src="Images/Img4.png" alt="Image 4" class="image">
                 <div class="imageOverlay">
                     <div class="avatarInfo">
-                        <img src="/Images/avatar.png" alt="Avatar" class="avatar">
+                        <img src="Images/avatar.png" alt="Avatar" class="avatar">
                         <span class="avatarName">Chris Lee</span>
-                        <img src="/Images/blue tick.png" alt="Blue Tick" class="blueTick">
+                        <img src="Images/blue tick.png" alt="Blue Tick" class="blueTick">
                     </div>
                     <div class="imageInfo">
-                        <img src="/Images/skullwhite.png" alt="Skull Icon" class="skullIcon">
+                        <img src="Images/skullwhite.png" alt="Skull Icon" class="skullIcon">
                         <span class="itemNumber">11223</span>
                         <span class="arrow">→</span>
                     </div>
@@ -1699,7 +1699,7 @@ font-size: 22px;
         <div class="feature-box">
             <h3 class="feature-title">NFT Marketplace</h3>
             <p class="feature-description">Discover and trade exclusive digital assets.</p>
-            <img class="feature-icon" src="/Images/skullcontainer.png" alt="NFT Marketplace Icon">
+            <img class="feature-icon" src="Images/skullcontainer.png" alt="NFT Marketplace Icon">
         </div>
 
         <div class="feature-box">
@@ -1745,7 +1745,7 @@ font-size: 22px;
 <div class="section">
     <div class="card">
         <div class="cardContent">
-            <img src="/Images/musicsvg.svg" alt="icon 1" class="cardIcon">
+            <img src="Images/musicsvg.svg" alt="icon 1" class="cardIcon">
             <p class="cardDescription">Collect limited-edition music rights</p>
             <button class="cardButton">Get Started</button>
         </div>
@@ -1753,7 +1753,7 @@ font-size: 22px;
 
     <div class="card">
         <div class="cardContent">
-            <img src="/Images/whiteskull.png" alt="icon 2" class="cardIcon">
+            <img src="Images/whiteskull.png" alt="icon 2" class="cardIcon">
             <p class="cardDescription">Explore the world of music NFTs</p>
             <button class="cardButton">Get Started</button>
         </div>
@@ -1761,7 +1761,7 @@ font-size: 22px;
 
     <div class="card">
         <div class="cardContent">
-            <img src="/Images/whitegame.png" alt="icon 3" class="cardIcon">
+            <img src="Images/whitegame.png" alt="icon 3" class="cardIcon">
             <p class="cardDescription">Own a piece of the music industry</p>
             <button class="cardButton">Get Started</button>
         </div>
